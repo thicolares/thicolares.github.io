@@ -72,14 +72,14 @@
     display:block;
     position: relative;
     z-index: 1;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    font-size: 30px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 17px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 100px;
-    margin-right: 10px;
+    margin-right: 16px;
     color: #ffe600;
     background-color: #d99dc8;
 }
