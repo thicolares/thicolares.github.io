@@ -4,3 +4,51 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+
+
+<head>
+	<meta charset="utf-8">
+	<title>Thiago Colares</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="home">
+    <main class="wrapper">
+    <section class="container" id="grids">
+        <figure class="profile-avatar">
+                <img src="assets/images/avatar-thiago-colares.JPG" alt="">
+        </figure>
+        <p>
+            AHAHALorem ipsum <strong>dolor sit amet, consectetur adipiscing elit</strong>. Mauris eu interdum diam, in accumsan eros. Fusce in dignissim ligula. Morbi vel tellus sed nunc tincidunt mattis. Curabitur feugiat arcu mauris, vitae aliquet massa ornare at. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        </p>
+    </section>
+    <section class="container">
+        <h2>I'm a section</h2>
+        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eget orci a magna placerat placerat. Etiam venenatis dui ut dictum iaculis. Nullam luctus, erat quis eleifend fringilla, orci enim tincidunt orci, ac blandit nunc eros porta quam. Phasellus dapibus aliquam vulputate. In ac accumsan sem.</p>
+    </section>
+    
+    <section class="container">
+        <h2>Talks</h2>
+        <p>Phasellus quis nisl feugiat, tempor metus sed, iaculis sem. Nulla facilisi. Donec eget quam pharetra sem semper ornare ut tincidunt urna. Curabitur sed accumsan libero. Pellentesque eu nisl quis leo molestie maximus. Morbi feugiat mollis dui quis vehicula. Maecenas odio purus, dictum ut dapibus id, eleifend vitae ante.</p>
+        <p>Vestibulum tempus blandit cursus. Morbi eget vehicula quam. Aenean nec congue arcu, vel sodales tellus. Aenean mattis tortor id mollis ultrices. Cras tellus mauris, ultrices non scelerisque id, lacinia non magna. Donec quis scelerisque lacus. Aliquam arcu augue, rutrum et bibendum quis, lobortis id erat.</p>
+    </section>
+    <footer class="footer">
+        <section class="container">
+            <p>
+                <small>Created with <a href="https://jekyllrb.com/">Jekyll</a> and proudly designed with <a href="https://milligram.io/">Milligram</a> -- by my friend <a href="http://cjpatoilo.com" title="CJ Patoilo" target="_blank"> CJ Patoilo</a>. Licensed under the<a href="https://github.com/colares/colares.github.io/blob/master/LICENSE" title="MIT License" target="_blank"> GNU General Public License v3.0</a>.</small>
+            </p>
+        </section>
+        <section>
+                {% include social.html %}
+        </section>
+    </footer>
+</main>
+    
+</body>
