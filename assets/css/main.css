@@ -14,9 +14,9 @@ figure.profile-avatar  {
     margin-top: 0;
 }
 figure.profile-avatar > img {
-    width: 280px;
+    width: 300px;
     border-radius: 50%;
-    border: 15px solid #83ff9e;
+    /* border: 15px solid #83ff9e; */
     margin: 0 auto;
     display: table;
 }
