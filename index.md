@@ -7,6 +7,14 @@ layout: home
 
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110664579-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110664579-1');
+    </script>
 	<meta charset="utf-8">
 	<title>Thiago Colares</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
