@@ -20,9 +20,6 @@ layout: home
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
-	<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
     <link rel="stylesheet" href="assets/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#455A64">
@@ -45,7 +42,7 @@ layout: home
     <footer class="footer">
         <section class="container">
             <p>
-                <small>Created with <a href="https://jekyllrb.com/">Jekyll</a> and proudly designed with <a href="https://milligram.io/">Milligram</a> -- by my friend <a href="http://cjpatoilo.com" title="CJ Patoilo" target="_blank"> CJ Patoilo</a>. Licensed under the<a href="https://github.com/colares/colares.github.io/blob/master/LICENSE" title="MIT License" target="_blank"> GNU General Public License v3.0</a>.</small>
+                <small>Created with <a href="https://jekyllrb.com/">Jekyll</a> and proudly designed with <a href="https://milligram.io/">Milligram</a> -- by my friend <a href="https://cjpatoilo.com" title="CJ Patoilo" target="_blank"> CJ Patoilo</a>. Licensed under the<a href="https://github.com/colares/colares.github.io/blob/master/LICENSE" title="MIT License" target="_blank"> GNU General Public License v3.0</a>.</small>
             </p>
         </section>
     </footer>
