@@ -4,6 +4,11 @@ title:  "Por que usar colchetes para definir um Symbol como uma key de objeto no
 date:   2018-01-07 10:24:51 -0300
 categories: jekyll update
 ---
+
+> Don’t program by coincidence
+>
+> &mdash; <cite>The Pragmatic Programmer, Andrew Hunt e‎ David Thomas</cite>
+
 Durante uma aula do [Willian Justen](https://twitter.com/Willian_justen) sobre ES6, ele colocou um [Symbol](https://developer.mozilla.org/pt-BR/docs/Glossary/Symbol) (veja também [ES6 In Depth: Symbols](https://hacks.mozilla.org/2015/06/es6-in-depth-symbols/)) entre colchetes para usá-lo como key de um objeto definido por meio da sintaxe object literals. Por que exatamente foi necessário? O código era mais ou menos assim: 
 
 {% highlight javascript %}
