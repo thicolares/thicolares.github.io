@@ -41,6 +41,7 @@ let obj = {
 }
 {% endhighlight %}
 
+
 ## Keys de objetos não são feitas só de string
 O ECMAScript 2015 introduziu a funcionalidade [computed property names](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names). Assim, toda key definida entre colchetes `[ ]` terá seu valor computado. Pode ser uma expressão, objeto, Symbol etc. Olhe:
 
