@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Por que usar colchetes para definir um Symbol como uma key de objeto no JavaScript ES6?"
+title:  "JavaScript ES6 Symbol como nome de propriedade"
 date:   2018-01-07 10:24:51 -0300
 categories: jekyll update
 ---
