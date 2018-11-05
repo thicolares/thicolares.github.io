@@ -1,0 +1,141 @@
+body {
+    font-size: 2.4em;
+    text-align: center;
+}
+.wrapper {
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+section.container {
+    margin-top: 30px;
+}
+figure.profile-avatar  {
+    margin-bottom: 6rem;
+    margin-top: 0;
+}
+figure.profile-avatar > img {
+    width: 300px;
+    border-radius: 50%;
+    /* border: 15px solid #83ff9e; */
+    margin: 0 auto;
+    display: table;
+}
+footer * > small {
+    font-size: 60%;
+}
+/*Use a media query to add a breakpoint at 800px:*/
+@media (max-width:768px) {
+    /* nothing yet  */
+}
+
+@font-face {
+    font-family: 'si';
+    src: url('../socicon.eot');
+    src: url('../socicon.eot?#iefix') format('embedded-opentype'),
+         url('../socicon.woff') format('woff'),
+         url('../socicon.ttf') format('truetype'),
+         url('../socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(../socicon.svg) format(svg);
+    }
+}
+
+.social-container {
+    /* 100% da largura (width) do viewport */
+    /* width: 100vw;   */
+
+    /* faz com que a div utilize o recurso de layout flexível (Flexbox) */
+    display: flex;
+
+    /* os itens internos serão dispostos horizontalmente, ou seja, em forma de linha (row); */
+    flex-direction: row;
+
+    /* elementos internos centralizados na direção definida na propriedade anterior
+    ou seja, os itens ficarão no centro da linha (horizontalmente); */
+    justify-content: center;
+}
+
+.soc {
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 17px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 16px;
+    color: #ffe600;
+    background-color: #d99dc8;
+}
+
+.soc a:hover {
+    z-index: 2;
+    background-color:c6 !important;
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-github:before {
+    content:'\e030';
+}
+.soc-linkedin:before {
+    content:'\e049';
+}
+.soc-facebook:before {
+    content:'\e041';
+}
+.soc-twitter:before {
+    content:'\e040';
+}
+.soc-medium:before {
+    content:'\e06d';
+}
