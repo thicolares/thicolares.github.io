@@ -42,3 +42,32 @@ blockquote {
   color: #999;
   border-left: .5rem solid #e5e5e5;
 }
+
+pre, code {
+  border: none;
+}
+
+figure.profile-avatar > img {
+  width: 300px;
+  border-radius: 50%;
+  /* border: 15px solid #83ff9e; */
+  margin: 0 auto;
+  display: table;
+}
+
+@media screen and (min-width: $on-medium) {
+  section.avatar-container {
+    display: flex;
+    div.about {
+      margin-left: 20px;
+      h2 {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+
+
+
+
