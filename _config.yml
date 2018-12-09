@@ -32,6 +32,8 @@ theme: minima
 plugins:
   - jekyll-feed
 
+permalink: /:year/:month/:day/:title:output_ext
+
 sass:
   style: compressed
   sass_dir: _sass
