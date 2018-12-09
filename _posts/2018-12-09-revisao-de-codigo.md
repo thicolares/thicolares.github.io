@@ -6,9 +6,9 @@ categories: [blog, travel]
 tags: [hot, summer]
 ---
 
-A Revisão de código é uma prática de desenvolvimento de software em que um código escrito precisa ser revisado por outras pessoas do time antes de ser entregue ao ambiente de produção. A prática surgiu com [Michael E. Fagan na IBM, década de 70](https://researcher.watson.ibm.com/researcher/view_page.php?id=6981), mas parece que demorou para ficar popular no mundo ágil (veja os reports da [VersionOne](http://stateofagile.versionone.com/)).
+A Revisão de código (code review) é uma prática de desenvolvimento de software em que um código escrito precisa ser revisado por outras pessoas do time antes de ser entregue ao ambiente de produção. A prática surgiu com [Michael E. Fagan na IBM, década de 70](https://researcher.watson.ibm.com/researcher/view_page.php?id=6981), mas parece que demorou para ficar popular no mundo ágil (veja os reports da [VersionOne](http://stateofagile.versionone.com/)).
 
-Tentamos implantar isso na [Agilize](https://www.agilize.com.br) há mais tempo algumas vezes, mas sem sucesso. No começo de 2017, fizemos a tentativa que vingou de maneira sólida. Por que desta vez deu certo? E o que aprendemos nesses 2 anos? Vou tenta resumir nessas mal traçadas linhas.
+Conseguimos implantar revisão de código na [Agilize](https://www.agilize.com.br) no começo de 2017, após várias tentativas sem sucesso. Por que desta vez deu certo? E o que aprendemos nesses 2 anos? Vou tenta resumir nessas mal traçadas linhas.
 
 ## Os 3 grandes benefícios da revisão de código
 
@@ -18,9 +18,9 @@ Tentamos implantar isso na [Agilize](https://www.agilize.com.br) há mais tempo 
 Se você cria um código e o submete para revisão do time, então você estabelece mais uma forma de fortalecer essa propriedade coletiva. Quando o time colabora em um código, ele sente-se partícipe da entrega&mdash;porque de fato é; e reforça o sentimento de "somos donos do projeto". Todo mundo ganha.
 
 ### 2. Melhora a qualidade da entrega
-**Um olhar nos pequenos erros.** Revisão de código funciona muito bem para notar erros de baixa complexidade. Comparações erradas, fluxos errados, variáveis duplicadas, erros de digitação, testes ausentes, violação do padrão de código, formatação do código etc. Estas coisas podem parecer pequenas, mas às vezes passam despercebidas mesmo usando testes automatizados (nós utilizamos muito) e são suficientes para causar grandes transtornos.
+**Um olhar sobre os pequenos erros.** Revisão de código funciona muito bem para notar erros de baixa complexidade. Comparações erradas, fluxos errados, variáveis duplicadas, erros de digitação, testes ausentes, violação do padrão de código, formatação do código etc. Estas coisas podem parecer pequenas, mas às vezes passam despercebidas mesmo usando testes automatizados (nós utilizamos muito) e são suficientes para causar grandes transtornos.
 
-**Mas pode iniciar grandes discussões.** Eventualmente, uma revisão de código pode gerar uma discussão maior. Geralmente é sinal de alguma falta de alinhamnto na atividade ou uma decisão equivocada. Independente do caso, quando isso acontece a gente geralmente encerra a revisão e voltamos um passo atrás. Fazemos algum pareamento ou uma discussão maior para resolver.
+**Mas pode iniciar grandes discussões.** Eventualmente, uma revisão de código pode gerar uma discussão maior. Geralmente é sinal de alguma falta de alinhamento na atividade ou uma decisão equivocada. Independente do caso, quando isso acontece a gente geralmente encerra a revisão e voltamos um passo atrás. Fazemos algum pareamento ou uma discussão maior para resolver.
 
 **Outras pessoas olharão seu código.** Uma coisa engraçada: você acaba sendo mais caprichoso ou testando mais porque sabe que outros olharão seu código. Isso também influencia positivamente na qualidade do código. Frequentemente ouço membros do time fazendo correções antecipadamente e dizendo _"Vou deixar isso aqui logo arrumado porque X vai notar"_.
 
@@ -31,9 +31,9 @@ Se você cria um código e o submete para revisão do time, então você estabel
 
 **Via de mão dupla**. Os revisores não só aprendem, como ensinam também. Durante a revisão, muitas dicas e conhecimentos trafegam em todas as direções.
 
-## Como implantamos revisão de código?
+## Como conseguimos implantar revisão de código?
 ### Tínhamos os valores corretos
-O principal desafio que encontrei para implantar revisão de código foram os aspectos culturais do time. Nossos valores e princícpios são basicamente inspirados no Manifesto Ágil e no XP. Depois que alinhamos e fortalecemos nossos aspectos culturais (no fim de 2016), conseguimos transformar a revisão de código em um hábito. E a própria recompensa da revisão de código a tornou sólida no time. 
+O principal desafio que encontrei para implantar revisão de código foram os aspectos culturais do time. Nossos valores e princípios são basicamente inspirados no Manifesto Ágil e no XP. Depois que alinhamos e fortalecemos nossos aspectos culturais (no fim de 2016), conseguimos transformar a revisão de código em um hábito. E a própria recompensa da revisão de código a tornou sólida no time. 
 
 ### Entendemos os objetivos da revisão de código
 Com os valores corretos, é preciso estudar como a revisão de código funciona. Saber o que a revisão de código resolve ou não. Por exemplo, nós não usamos a revisão de código para fazer análises muito profundas do código. Assim, conseguimos otimizar o tempo. Do contrário, o time perderia muito tempo na revisão e sentiria que o tempo poderia ser melhor utilizado. Mas quando temos necessidade de uma análise mais detalhada, a gente faz pareamento, por exemplo. 
@@ -47,7 +47,9 @@ No começo, as coisas não funcionaram direito. Mesmo após estudar como funcion
 
 ## Dicas e aprendizados 
 
-### Revise o seu próprio pull request
+### Revise o seu próprio pull request*
+* Nós criamos revisões de código por meio de _pull request_
+
 O próprio autor pode e deve revisar o seu próprio código. Nós mesmos frequentemente percebemos nossos erros e corrigimos.
 
 ### Menos código, mais revisão
@@ -56,14 +58,12 @@ O time acaba sub-revisando códigos muito extensos&mdash;é compreensível, voc�
 
 ### Descreva bem o seu _pull request_
 
-> Aqui nós iniciamos uma revisão de código por meio de _pull request_
-
 Dê contexto para o seu revisor. Assim, ele saberá para o que está olhando e o que esperar. **Sempre recomendo textos objetivos ou checklists.** Imagens são bem-vindas. Vídeos e gifs, mais ainda! _Qual o problema você está resolvendo? Qual funcionalidade está entregando? Qual o comportamento esperado?_
 
 Os _commits_ também fazer parte da documentação do _pull request_. Então, faça _commits_ pequenos, com blocos lógicos definidos, bem descritos. Isso ajudará na revisão do código.
 
-### Minimo de 2 pessoas
-Há dois bons motivos para estabelecer um mínimo de 2 pessoas:
+### Minimo de 2 revisores
+Há dois bons motivos para estabelecer um mínimo de 2 revisores:
 1. Sentimos que é suficiente para pegar a maioria dos erros;
 2. Não precisamos ficar esperando o time todo revisar para enviar o código.
 
