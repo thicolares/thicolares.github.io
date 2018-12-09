@@ -48,7 +48,7 @@ No começo, as coisas não funcionaram direito. Mesmo após estudar como funcion
 ## Dicas e aprendizados 
 
 ### Revise o seu próprio pull request*
-* Nós criamos revisões de código por meio de _pull request_
+\* Nós criamos revisões de código por meio de _pull request_
 
 O próprio autor pode e deve revisar o seu próprio código. Nós mesmos frequentemente percebemos nossos erros e corrigimos.
 
