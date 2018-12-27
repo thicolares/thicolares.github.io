@@ -18,10 +18,10 @@ title: Thiago Colares
 description: >- # this means to ignore newlines until "baseurl:"
   Entrepreneur, agile manager, and full stack developer. Co-founder of Agilize Cloud Accounting.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://colar.es" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://thicolares.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: thicolares
-github_username: colares
-linkedin_username: thiagocolares
+github_username: thicolares
+linkedin_username: thicolares
 
 disqus:
   shortname: colar-es
