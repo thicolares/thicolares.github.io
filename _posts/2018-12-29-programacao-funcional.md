@@ -6,7 +6,7 @@ categories: [blog]
 tags: [programação, funcional]
 ---
 
-Os conceitos básicos de programação funcional são simples e me tornaram um programador melhor: código com menos bugs, testes unitários triviais, código mais claro e maior produtividade. Há um bom tempo eu fiz uma _talk_ interna na Agilize sobre isto, mas ainda vejo muita gente nas comunidades que que não usa. Espero que esse texto melhore sua forma de programar também.
+Os conceitos básicos de programação funcional são simples e me tornaram um programador melhor: código com menos bugs, testes unitários triviais, código mais claro e maior produtividade. Há um tempo eu fiz uma _talk_ interna na Agilize sobre isto, mas ainda vejo muita gente nas comunidades que não usa. Espero que esse texto melhore sua forma de programar também.
 
 
 # O que é programação funcional?
@@ -46,14 +46,14 @@ Na computação, uma função é um bloco de código que executa uma tarefa e re
 
 Ainda na computação, uma **função pura** é uma função que tem as seguintes características:
 1. Sem _inputs_ ou _outputs_ ocultos&mdash;**transparência referencial**;
-1. Mesmo parâmetro, mesmo resultado sempreo&mdash;**idempotência**.
+1. Mesmo parâmetro, mesmo resultado sempre&mdash;**idempotência**.
 
 Note então que uma função pura na computação é basicamente uma função segundo a matemática matemática!
 
 # Transparência referencial
 Sem _inputs_ ou _outputs_ ocultos.
 
-Vamos ver os problemas existentes na classe `Calendar` a seguir. Eles são pequenos, mas o suficiente para causa estragos e se aplica à várias linguagens:
+Vamos ver os problemas existentes na classe `Calendar` a seguir. Eles são pequenos, mas o suficiente para causar estragos e se aplica à várias linguagens:
 {% highlight php %}
 <?php
 class Calendar {
@@ -133,7 +133,7 @@ Existem várias formas de resolver esses tipos de problemas. O importante é voc
 # Idempotência
 Mesmo parâmetro, mesmo resultado sempre.
 
-Se sua função tem transparência referencial, ela é idempotente (conclusão sem prova matemática). 
+Se sua função tem transparência referencial, ela é idempotente (conclusão minha, sem prova matemática). 
 
 Ou seja, se a função só depende dos argumentos para gerar o resultado e você passa os mesmos argumentos, o resultado tem que ser o mesmo. Se não for, existe algum *input* implítico. E, por tanto, a função não tem transparência referencial.
 
@@ -184,15 +184,25 @@ arr.splice(0,2);
 // []
 {% endhighlight %}
 
-Cada vez que eu chamo `splice()`, ela altera o conteúdo do array enquanto remove os elementos e os retorna. Na segunda chamada à função, **o array também mudou**. O array também é argumento da função, **só que é implícito**. Por isso o resultado mudou. 
+Cada vez que eu chamo `splice()`, ela retorna um resultado diferente.
+ 
+ Mas isso acontece porque ela altera o conteúdo do array enquanto remove os elementos e os retorna. Na segunda chamada à função, **o array já é outro**. O array também é argumento da função, **só que é implícito**. Por isso o resultado mudou. 
 
 De fato `splice()` é idempotente. Só que ela não é pura porque não tem transparência referencial.
 
 # Conclusão
-Agora você tem o que precisa para criar métodos previsíveis, com inputs explícitos e sem efeitos colaterais. Isso lhe dará grande cofiança nos testes e legibilidade no código. Note que você pode usar esses conceitos junto com conceitos de Orientação a Objetos. 
- 
- Mas esta é só a ponta do _icerberg_.
+Minha sugestão? Use funções puras sempre que puder ou fizer sentido.
+
+Suas funções e métodos são previsíveis, com inputs explícitos e sem efeitos colaterais. Isso lhe dará grande cofiança nos testes e legibilidade no código. Note que você pode usar esses conceitos junto com conceitos de Orientação a Objetos.
+
+Mas esta é só a ponta do _icerberg_.
 
 Espero que os conceitos deste texto lhe ajudem a usar funções puras em funções como `filter()`, `map()`, `find()`, `reduce()`, presentes em várias linguagens. E lhe ajudem também a explorar outras coisas, como monads, imutabilidade, recursão, polimorfismo paramétrico, currying, closures, functors, memoização, avaliação tardia etc.
 
-Você já pode mudar **agora** a sua forma de programar.
+Para fechar, selecionei umas frases do [The Zen of Python](https://www.python.org/dev/peps/pep-0020/):
+* *Explicit is better than implicit.*
+* *Flat is better than nested.*
+* *If the implementation is hard to explain, it's a bad idea.*
+* *If the implementation is easy to explain, it may be a good idea.*
+
+Você já pode melhorar **agora** a sua forma de programar.
