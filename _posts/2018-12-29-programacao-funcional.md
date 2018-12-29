@@ -6,7 +6,7 @@ categories: [blog]
 tags: [programação, funcional]
 ---
 
-Os conceitos básicos de programação funcional são simples e me transformaram em um programador melhor. Há um bom tempo eu fiz uma _talk_ interna na Agilize sobre isto, mas ainda vejo muita gente nas comunidades que que não usa. Espero que esse texto melhore sua forma de programar também.
+Os conceitos básicos de programação funcional são simples e me tornaram um programador melhor: código com menos bugs, testes unitários triviais, código mais claro e maior produtividade. Há um bom tempo eu fiz uma _talk_ interna na Agilize sobre isto, mas ainda vejo muita gente nas comunidades que que não usa. Espero que esse texto melhore sua forma de programar também.
 
 
 # O que é programação funcional?
