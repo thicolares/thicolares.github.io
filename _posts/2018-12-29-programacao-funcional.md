@@ -4,6 +4,7 @@ title:  "Conceitos básicos de programação funcional para você usar hoje"
 date:   2018-12-29 12:10:12 -0300
 categories: [blog]
 tags: [programação, funcional]
+image: /assets/img/2018-12-15-programacao-funcional/diagrama-funcao-nao-funcao.png
 ---
 
 Os conceitos básicos de programação funcional são simples e me tornaram um programador melhor: código com menos bugs, testes unitários triviais, código mais claro e maior produtividade. Há um tempo eu fiz uma _talk_ interna na Agilize sobre isto, mas ainda vejo muita gente nas comunidades que não usa. Espero que esse texto melhore sua forma de programar também.

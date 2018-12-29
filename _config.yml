@@ -23,6 +23,18 @@ twitter_username: thicolares
 github_username: thicolares
 linkedin_username: thicolares
 
+# SEO tags
+twitter:
+  username: thicolares
+  card: summary
+logo: "/assets/img/avatar-thiago-colares.jpg"
+social:
+  name: Thiago Colares
+  links:
+  - https://twitter.com/thicolares
+  - https://www.linkedin.com/in/thicolares
+  - https://github.com/thicolares
+
 disqus:
   shortname: colar-es
 
@@ -31,12 +43,15 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 permalink: /:year/:month/:day/:title:output_ext
 
 sass:
   style: compressed
   sass_dir: _sass
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
