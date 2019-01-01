@@ -192,7 +192,9 @@ Cada vez que eu chamo `splice()`, ela retorna um resultado diferente.
 De fato `splice()` é idempotente. Só que ela não é pura porque não tem transparência referencial.
 
 # Conclusão
-Minha sugestão? Use funções puras sempre que puder ou fizer sentido. Ou funções:
+Minha sugestão? Use funções puras sempre que puder ou fizer sentido.
+
+Ou seja, funções:
 1. Sem _inputs_ ou _outputs_ ocultos&mdash;**transparência referencial**;
 1. Nas quais dados os mesmos parâmetros, retornam o mesmo resultado sempre&mdash;**idempotência**.
 
