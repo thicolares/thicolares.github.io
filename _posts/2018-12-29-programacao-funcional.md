@@ -49,7 +49,7 @@ Ainda na computação, uma **função pura** é uma função que tem as seguinte
 1. Sem _inputs_ ou _outputs_ ocultos&mdash;**transparência referencial**;
 1. Mesmo parâmetro, mesmo resultado sempre&mdash;**idempotência**.
 
-Note então que uma função pura na computação é basicamente uma função segundo a matemática matemática!
+Note então que uma função pura na computação é basicamente uma função segundo a matemática!
 
 # Transparência referencial
 Sem _inputs_ ou _outputs_ ocultos.
@@ -192,9 +192,11 @@ Cada vez que eu chamo `splice()`, ela retorna um resultado diferente.
 De fato `splice()` é idempotente. Só que ela não é pura porque não tem transparência referencial.
 
 # Conclusão
-Minha sugestão? Use funções puras sempre que puder ou fizer sentido.
+Minha sugestão? Use funções puras sempre que puder ou fizer sentido. Ou funções:
+1. Sem _inputs_ ou _outputs_ ocultos&mdash;**transparência referencial**;
+1. Nas quais dados os mesmos parâmetros, retornam o mesmo resultado sempre&mdash;**idempotência**.
 
-Suas funções e métodos são previsíveis, com inputs explícitos e sem efeitos colaterais. Isso lhe dará grande cofiança nos testes e legibilidade no código. Note que você pode usar esses conceitos junto com conceitos de Orientação a Objetos.
+Suas funções e métodos serão previsíveis, com inputs explícitos e sem efeitos colaterais. Isso lhe dará grande cofiança nos testes e legibilidade no código. Note que você pode usar esses conceitos junto com conceitos de Orientação a Objetos.
 
 Mas esta é só a ponta do _icerberg_.
 
