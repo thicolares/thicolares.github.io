@@ -51,7 +51,9 @@ sass:
   style: compressed
   sass_dir: _sass
 
-
+header_pages:
+  - projects.md
+  - about.md
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
