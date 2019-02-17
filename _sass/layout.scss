@@ -2,6 +2,9 @@
   @include media-query($on-palm) {
     position: initial;
     border: none;
+    float: none;
+    text-align: left;
+    padding-bottom: 10px;
 
     input ~ .trigger {
       display: block;
