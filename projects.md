@@ -10,7 +10,7 @@ Find the place where there are more concerts performed by the artists you love.
 
 **Winner of the Soundcloud Music Hack Day at CPBR5 on 2012!** It took me to attend the Campus Party ~~San Francisco~~ Berlin.
 
-[Originally created in 2012](https://github.com/thicolares/MyWonderland). [Rebuilt in 2018 for study purposes.](https://github.com/thicolares/my-wonderlan)
+[Originally created on 2012](https://github.com/thicolares/MyWonderland). [Rebuilt on 2018 for study purposes.](https://github.com/thicolares/my-wonderlan)
 
 <a href="https://github.com/thicolares/my-wonderland"><img src="/assets/img/projects/my-wonderland.png" alt="My Wonderland" title="My Wonderland" class="project-banner"></a>
 
