@@ -1,0 +1,23 @@
+.site-nav {
+  @include media-query($on-palm) {
+    position: initial;
+    border: none;
+    float: none;
+    text-align: left;
+    padding-bottom: 10px;
+
+    input ~ .trigger {
+      display: block;
+    }
+
+    .page-link {
+      display: inline;
+      padding: 0;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+      margin-left: 0;
+    }
+  }
+}
