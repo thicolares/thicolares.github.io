@@ -53,6 +53,7 @@ sass:
 
 header_pages:
   - projects.md
+  - talks.md
   - about.md
 
 # Exclude from processing.
