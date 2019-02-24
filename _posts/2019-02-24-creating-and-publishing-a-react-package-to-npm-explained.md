@@ -9,7 +9,7 @@ image: /assets/img/2019-02-24-react-npm-pkg/react-npm-pkg.png
 
 ![Hello World](/assets/img/2019-02-24-react-npm-pkg/react-npm-pkg.png)
 
-So you have just create a nice React package. Let's make it available to the world as an npm package.  
+So you have just created a nice React package. Let's make it available to the world as an npm package.  
 
 **I'm assuming that** you have Node 8.10.0 or later on your local development machine, but is not required on the server. And that you know some basics on JavaScript and React.
 
@@ -126,7 +126,7 @@ Replace the default `build` task inside `package.json` with the following:
 {% endhighlight %}
 </figure>
 
-The `--copy-files --ignore __tests__,spec.js,test.js,__snapshots__"` part of the script is optional so far. It will make more sense as you implement automatic testing (recommended).
+The `--copy-files --ignore ...` section of the task build is optional so far. It will make more sense as you implement automatic testing (recommended).
 
 ### Why should I replace the default build task?
 The Create React App's default `build` task ([see the complete code here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/scripts/build.js)) pack more stuffs than we need until now. See for yourself. 
