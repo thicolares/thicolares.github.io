@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Creating and publishing a React package on npm (explained)"
+title:  "Creating a React package and publishing it on npm (explained)"
 date:   2019-02-24 17:09:20 -0300
 categories: [blog]
 tags: [react, npm, package]
@@ -126,7 +126,7 @@ Replace the default `build` task inside `package.json` with the following:
 {% endhighlight %}
 </figure>
 
-The `--copy-files --ignore ...` section of the task build is optional so far. It will make more sense as you implement automatic testing (recommended).
+The `--copy-files --ignore ...` section of the build task is optional so far. It will make more sense as you implement automatic testing (recommended).
 
 ### Why should I replace the default build task?
 The Create React App's default `build` task ([see the complete code here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/scripts/build.js)) pack more stuffs than we need until now. See for yourself. 
