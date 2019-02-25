@@ -11,7 +11,7 @@ image: /assets/img/2019-02-24-react-npm-pkg/react-npm-pkg.png
 
 So you have just created a nice React package. Let's make it available to the world as an npm package.  
 
-**I'm assuming that** you have Node 8.10.0 or later on your local development machine, but is not required on the server. And that you know some basics on JavaScript and React.
+**I'm assuming that** you have Node 8.10.0 or later on your local development machine, although not required on the server. And that you know some basics on JavaScript and React.
 
 # 1. Create a new React app using `create-react-app`
 
