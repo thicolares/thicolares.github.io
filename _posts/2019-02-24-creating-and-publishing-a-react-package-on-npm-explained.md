@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Creating and publishing a React package to npm (explained)"
+title:  "Creating and publishing a React package on npm (explained)"
 date:   2019-02-24 17:09:20 -0300
 categories: [blog]
 tags: [react, npm, package]
