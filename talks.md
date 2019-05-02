@@ -4,6 +4,16 @@ title: Talks
 permalink: /talks/
 ---
 
+## O básico que ainda deveríamos entender sobre Unicode e encondings (pt-BR)
+
+<span class="post-date">March, 2019</span> &bull; Salvador, Brazil
+
+<script async class="speakerdeck-embed" data-id="b7a5eb1c01074f33bd685dcba647c8cd" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+&nbsp;
+
+
 ## The pragmatic agilist
 
 <span class="post-date">September, 2018</span> &bull; Brasília, Brazil
