@@ -74,7 +74,7 @@ It would throw:
 
 ## Bottom line
 
-Use htmlspecialchars() if you want to build a safe XML. htmlentities() is not a guaranteed way to do that.
+Use `htmlspecialchars()` if you want to build a safe XML. `htmlentities()` is not a guaranteed way to do that.
 
 
 
