@@ -12,19 +12,7 @@ A small, although interesting, challenge we faced years ago: how to properly esc
 
 ## htmlentities()
 
-We started using [`htmlentities()`](https://www.php.net/manual/en/function.htmlentities.php) to scape some contents of the XML. This worked well for a while [by coincidence](https://pragprog.com/the-pragmatic-programmer/extracts/coincidence "Programming by Coincidence"). Then we noticed `htmlentities()` was not well suited to create safe strings to XML. Because it transforms any special character to [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity), including some that are invalid for the XML.
-
-## XML recommendation
-
-According to the [W3C XML recommendation](https://www.w3.org/TR/2008/REC-xml-20081126/#sec-predefined-ent), this is the set of general entities specified for scaping left angle bracket, ampersand, and other delimiters in an XML document:
-
-    < (replace with &lt;) 
-    > (replace with &gt;) 
-    & (replace with &amp;) 
-    ' (replace with &apos;) 
-    " (replace with &quot;) 
-
-Other HTML entities are invalid.
+We started using [`htmlentities()`](https://www.php.net/manual/en/function.htmlentities.php) to scape some contents of the XML. This worked well for a while [by coincidence](https://pragprog.com/the-pragmatic-programmer/extracts/coincidence "Programming by Coincidence"). Then we noticed `htmlentities()` was not well suited to create safe strings to XML. Because it transforms any special character to [HTML entities](https://developer.mozilla.org/en-US/docs/Glossary/Entity), **including some that are invalid for the XML.**
 
 Example:
 
@@ -47,6 +35,20 @@ If you validate this XML:
 It would throw:
 
     error on line 3 at column 15: Entity 'ecirc' not defined
+
+
+## XML recommendation
+
+According to the [W3C XML recommendation](https://www.w3.org/TR/2008/REC-xml-20081126/#sec-predefined-ent), this is the set of general entities specified for scaping left angle bracket, ampersand, and other delimiters in an XML document:
+
+    < (replace with &lt;) 
+    > (replace with &gt;) 
+    & (replace with &amp;) 
+    ' (replace with &apos;) 
+    " (replace with &quot;) 
+
+Other HTML entities are invalid.
+
 
 ## htmlspecialchars()
 
