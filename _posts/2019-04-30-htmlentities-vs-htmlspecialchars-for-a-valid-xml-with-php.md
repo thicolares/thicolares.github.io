@@ -6,9 +6,9 @@ categories: [xml]
 tags: [xml, php, htmlentities, htmlspecialchars, chars]
 ---
 
-In Brazil, electronic invoice issuance is compulsory for 100% of issuers. It is the greatest electronic invoice infrastructure I have seen so far and run on top of the SOAP messaging protocol, using XML and the e-signature XMLDsig format.
+Electronic invoice issuance is compulsory for 100% of issuers in Brazil. It is the greatest electronic invoice infrastructure I have seen so far and runs on top of the SOAP messaging protocol, using XML and the e-signature XMLDsig format.
 
-A small, although interesting, challenge we faced years ago: how to properly escape special characters in XML with PHP?
+Here is a small, although interesting, challenge we faced years ago while integrating with government systems using SOAP: how to properly escape special characters in XML with PHP?
 
 ## htmlentities()
 
