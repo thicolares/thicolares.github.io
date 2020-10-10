@@ -22,11 +22,11 @@ A React component that renders SVG ukulele chord diagrams.
 
 <a href="https://www.npmjs.com/package/ukulele-chord"><img src="/assets/img/projects/ukulele-chord.png" alt="Ukulele chord in action" title="Ukulele chord in action" class="project-banner"></a>
 
+&nbsp;
+
 # Music / Recording
-I had a band till 2009 called "Elipê" in which I played the eletric guitar.
+I had a band till 2009 called "Elipê" in which I played the eletric guitar. Listen below to the albums we have recorded.
 
 {% include spotify-album.html id="3WlpTWrnDYXNO0OKBOkmH9" %}
-
-&nbsp;
 
 {% include spotify-album.html id="71JTCEKIegtIlq40eyDd0j" %}
