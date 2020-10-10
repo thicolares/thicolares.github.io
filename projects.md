@@ -24,4 +24,4 @@ A React component that renders SVG ukulele chord diagrams.
 
 # Music
 
-{% include spotify-album.html id=3WlpTWrnDYXNO0OKBOkmH9 %}
+{% include spotify-album.html id="3WlpTWrnDYXNO0OKBOkmH9" %}
