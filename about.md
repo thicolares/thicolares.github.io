@@ -9,9 +9,6 @@ permalink: /about/
     <div class="about">
         <h2>I'm Thiago Colares</h2>
         <p>{{- site.description -}}.</p>
-        <p>Former: co-founder at <a
-                href="https://www.agilize.com.br/">Agilize Cloud Accounting</a> and co-founder at
-            Apimenti.</p>
     </div>
 </section>   
 
