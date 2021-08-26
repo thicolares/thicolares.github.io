@@ -8,7 +8,8 @@ permalink: /about/
     <figure class="profile-avatar"><img src="/assets/img/avatar-thiago-colares.jpg" alt=""></figure>
     <div class="about">
         <h2>I'm Thiago Colares</h2>
-        <p>{{- site.description | escape -}} Based in Montréal, Canada. Former: co-founder at <a
+        <p>{{- site.description | escape -}}.<p>
+        <p>Former: co-founder at <a
                 href="https://www.agilize.com.br/">Agilize Cloud Accounting</a> and co-founder at
             Apimenti.</p>
     </div>
