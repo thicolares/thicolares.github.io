@@ -51,3 +51,50 @@ $on-laptop:        800px !default;
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
 }
+
+// ---------------------------------------------------------------------------
+// Theme tokens (CSS custom properties)
+// Default palette = light. Dark applied via [data-theme="dark"] OR system
+// preference when user has not explicitly chosen light.
+// ---------------------------------------------------------------------------
+:root {
+  --bg:             #fdfdfd;
+  --bg-elevated:    #ffffff;
+  --text:           #555555;
+  --text-muted:     #828282;
+  --heading:        #333333;
+  --link:           #2a7ae2;
+  --link-visited:   #1756a9;
+  --link-hover:     #1756a9;
+  --border:         #e8e8e8;
+  --quote-text:     #999999;
+  --quote-border:   #e5e5e5;
+  --img-border:     rgba(0, 0, 0, 0.1);
+  --code-bg:        #f4f4f4;
+  --code-fg:        #24292e;
+  --btn-hover-bg:   rgba(0, 0, 0, 0.06);
+}
+
+@mixin dark-theme {
+  --bg:             #0f1419;
+  --bg-elevated:    #1a1f26;
+  --text:           #d4d4d4;
+  --text-muted:     #9aa4ad;
+  --heading:        #f0f0f0;
+  --link:           #79b8ff;
+  --link-visited:   #b48cff;
+  --link-hover:     #a8d1ff;
+  --border:         #2a2f36;
+  --quote-text:     #9aa4ad;
+  --quote-border:   #2a2f36;
+  --img-border:     rgba(255, 255, 255, 0.08);
+  --code-bg:        #1a1f26;
+  --code-fg:        #d4d4d4;
+  --btn-hover-bg:   rgba(255, 255, 255, 0.08);
+}
+
+:root[data-theme="dark"] { @include dark-theme; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include dark-theme; }
+}
