@@ -4,6 +4,26 @@ title: Talks
 permalink: /talks/
 ---
 
+## How pgvector extends PostgreSQL
+
+<span class="post-date">November, 2025</span> &bull; Montréal, Canada
+
+<script defer class="speakerdeck-embed" data-id="82f8130792a042f48cf903815f95be7f" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+&nbsp;
+
+
+## Functional programming: basic concepts you can start using today
+
+<span class="post-date">May, 2021</span> &bull; Montréal, Canada
+
+<script defer class="speakerdeck-embed" data-id="8ec42c9d0eff4332837e39093d8b2a02" data-ratio="1.7772511848341233" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+&nbsp;
+
+
 ## O básico que ainda deveríamos entender sobre Unicode e encondings (pt-BR)
 
 <span class="post-date">March, 2019</span> &bull; Salvador, Brazil
