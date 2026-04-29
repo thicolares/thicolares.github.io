@@ -1,0 +1,61 @@
+// ---------------------------------------------------------------------------
+// Theme toggle button
+// Lives in .site-header next to .site-title. Shows the icon of the
+// destination theme (sun = "switch to light", moon = "switch to dark").
+// ---------------------------------------------------------------------------
+.site-header .wrapper {
+  position: relative;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--heading);
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background-color .15s ease, color .15s ease, transform .15s ease;
+
+  &:hover {
+    background-color: var(--btn-hover-bg);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 2px;
+  }
+
+  &:active {
+    transform: scale(0.94);
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+  }
+
+  .icon-sun  { display: none; }
+  .icon-moon { display: block; }
+}
+
+// In dark mode (explicit OR via system pref unless user forced light),
+// show the sun icon (= "switch to light").
+:root[data-theme="dark"] .theme-toggle {
+  .icon-sun  { display: block; }
+  .icon-moon { display: none; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle {
+    .icon-sun  { display: block; }
+    .icon-moon { display: none; }
+  }
+}

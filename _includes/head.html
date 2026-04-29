@@ -10,6 +10,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <script>(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}})();</script>
     {%- seo -%}
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
     {%- feed_meta -%}
@@ -17,6 +19,7 @@
     {%- include google-analytics.html -%}
     {%- endif -%}
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="/assets/js/theme-toggle.js" defer></script>
 
     {% seo %}
 </head>

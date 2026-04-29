@@ -1,0 +1,108 @@
+// ---------------------------------------------------------------------------
+// Overrides for minima theme gem styles (loaded via /assets/main.css).
+// Map minima's hardcoded colors to our CSS theme tokens so the gem responds
+// to dark mode. These are defined globally; tokens flip with theme.
+// ---------------------------------------------------------------------------
+
+.site-header {
+  border-top-color: var(--heading);
+  border-bottom: 1px solid var(--border);
+  background-color: var(--bg);
+}
+
+.site-title,
+.site-title:visited {
+  color: var(--heading);
+}
+
+.site-nav {
+  background-color: var(--bg);
+
+  .page-link,
+  .page-link:visited {
+    color: var(--heading);
+  }
+
+  // mobile menu icon (hamburger)
+  .menu-icon > svg { fill: var(--heading); }
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.footer-heading,
+.footer-col h2,
+.footer-col h3 { color: var(--heading); }
+
+.post-meta { color: var(--text-muted); }
+
+.post-link          { color: var(--link); }
+.post-link:visited  { color: var(--link-visited); }
+
+.post-content,
+.page-content { color: var(--text); }
+
+table {
+  th, td { border-color: var(--border); }
+  th { background-color: var(--bg-elevated); }
+  tr:nth-child(even) { background-color: var(--bg-elevated); }
+}
+
+hr { border-color: var(--border); }
+
+pre,
+code {
+  background-color: var(--code-bg);
+  color: var(--code-fg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+code { padding: 1px 5px; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+    background: transparent;
+    border: 0;
+    padding: 0;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Rouge syntax highlighting — dark variant
+// Applied only when dark theme is active. Light mode uses minima's defaults.
+// Palette: One Dark inspired.
+// ---------------------------------------------------------------------------
+@mixin rouge-dark {
+  .highlight {
+    background: var(--code-bg);
+    color: #d4d4d4;
+
+    .c, .c1, .cm, .cs, .cd, .cp { color: #7f848e; font-style: italic; }   // comments
+    .k, .kc, .kd, .kn, .kp, .kr, .kt { color: #c678dd; }                  // keywords
+    .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr, .ss { color: #98c379; } // strings
+    .m, .mf, .mh, .mi, .il, .mo, .mb, .mx { color: #d19a66; }             // numbers
+    .nb, .bp { color: #e5c07b; }                                          // built-ins
+    .nf, .fm { color: #61afef; }                                          // function names
+    .nc, .nn { color: #e5c07b; }                                          // class / namespace
+    .o, .ow { color: #56b6c2; }                                           // operators
+    .na, .nl { color: #d19a66; }                                          // attribute / label
+    .nt { color: #e06c75; }                                               // tag
+    .err { color: #e06c75; background: transparent; }                     // error
+    .gd { color: #e06c75; background: rgba(224, 108, 117, .15); }         // diff deleted
+    .gi { color: #98c379; background: rgba(152, 195, 121, .15); }         // diff inserted
+    .gh, .gu { color: #61afef; font-weight: bold; }                       // diff heading
+    .gp { color: #7f848e; }                                               // generic prompt
+  }
+}
+
+:root[data-theme="dark"] { @include rouge-dark; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include rouge-dark; }
+}
